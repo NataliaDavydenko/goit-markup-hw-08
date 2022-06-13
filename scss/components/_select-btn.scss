@@ -1,4 +1,4 @@
-.btn-list {
+.select-btns {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,7 +6,7 @@
     margin-bottom: 50px;
 }
 
-.btn-list-item {
+.select-btns__item {
     margin-right: 8px;
 
     &:last-child {
@@ -14,7 +14,7 @@
     }
 }
 
-.button {
+.select-btns__button {
     transition: background-color var(--main-transition),
         color var(--main-transition), box-shadow var(--main-transition);
 
