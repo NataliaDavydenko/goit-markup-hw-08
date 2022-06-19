@@ -1,0 +1,144 @@
+.mobile-menu,
+.menu-container__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    padding: 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+
+    @include mq (tablet) {
+        display: none;
+    }
+
+    &:hover .mobile-menu__icon,
+    &:focus .mobile-menu__icon {
+        fill: var(--accent-color);
+    }
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+
+    padding: 48px 40px;
+
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+        0px 1px 3px rgba(0, 0, 0, 0.16);
+
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+
+    &.is-open {
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+    @include mq (tablet) {
+        display: none;
+    }
+}
+
+.menu-container__btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0;
+
+    cursor: pointer;
+
+    &:hover .menu-container__icon,
+    &:focus .menu-container__icon {
+        fill: var(--accent-color);
+    }
+}
+
+.menu-nav__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.menu-nav__link {
+
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: var(--main-text-color);
+
+    &--accent-color {
+        color: var(--accent-color);
+    }
+}
+
+.menu-contact {
+    margin-top: auto;
+    margin-bottom: 64px
+}
+
+.menu-contact__tel-item {
+    margin-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+
+    letter-spacing: 0.02em;
+
+    color: var(--accent-color);
+}
+
+.menu-contact__mail-item {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    color: var(--secondary-text-color);
+}
+
+.menu-socials {
+    display: flex;
+    margin-top: auto;
+    ;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+
+    letter-spacing: 0.02em;
+
+    color: var(--accent-color);
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.menu-socials__item {
+    display: flex;
+    align-items: center;
+}
+
+.menu-socials__item:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(33, 33, 33, .2);
+}

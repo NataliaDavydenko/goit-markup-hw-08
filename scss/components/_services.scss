@@ -2,9 +2,20 @@
     padding-top: 0;
 }
 
+.section__title--hidden{
+    display: none;
+
+    @include mq (desktop) {
+        display: block;
+    }
+}
 .services {
+    display: none;
+    
+    @include mq (desktop){
     display: flex;
     justify-content: center;
+    }
 }
 
 .services__item {

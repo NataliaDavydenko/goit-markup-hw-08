@@ -1,24 +1,55 @@
 .footer {
     background-color: var(--accent-background-color);
     padding: 60px 0;
+
+    @include mq (not-desktop) {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .footer__container {
+
+    @include mq (tablet){
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: baseline;
+    }
 }
 
 .footer__group {
+
+    @include mq (tablet){
+        margin-right: 165px;
+        margin-bottom: 60px;
+    }
+
+    @include mq (desktop){
     margin-right: 70px;
     flex-grow: 1;
+    margin-bottom: 0;
+    }
+}
+
+.address-group{
+
+    @include mq (mobile-only){
+        margin-bottom: 60px;
+    }
 }
 
 .address-group__item {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
+    @include mq (desktop){
+    margin-bottom: 9px;
+    }
 
     &:last-child {
         margin-bottom: 0;
@@ -47,7 +78,17 @@
 
 
 .join-group {
-    margin-right: 93px;
+
+    @include mq (not-desktop){
+        justify-content: center;
+        text-align: center;
+
+        margin-bottom: 60px;
+    }
+
+    @include mq (desktop){
+        margin-right: 93px;
+    }
 }
 
 .join-group__title {
@@ -64,6 +105,10 @@
 
 .socials-box {
     display: flex;
+
+    @include mq (mobile-only) {
+        justify-content: center;
+        }
 }
 
 .socials-box__item:not(:last-child) {
@@ -95,6 +140,7 @@
     fill: currentColor;
 }
 
+
 .subscribe-form__title {
     display: block;
     margin-bottom: 20px;
@@ -107,18 +153,34 @@
     text-transform: uppercase;
 
     color: var(--secondary-text-color-white);
+
+    @include mq (not-desktop) {
+        text-align: center;
+    }
 }
 
 .subscribe-form__group {
+    @include mq (not-desktop) {
+        display: block;
+        justify-content: center;
+    }
+
+    @include mq (desktop){
     display: flex;
+    }
 }
 
 .subscribe-form__label {
+    @include mq (tablet){
+        display: block;
+    }
+
+    @include mq (desktop){
     margin-right: 12px;
+    }
 }
 
 .subscribe-form__input {
-    display: flex;
     width: 358px;
     height: 50px;
     padding: 15px 16px;
@@ -136,12 +198,21 @@
     &:focus{
         border-color: var(--accent-color);
     }
+
+    @include mq (not-desktop) {
+        margin-bottom: 20px;
+        width: 450px;
+    }
 }
 
 .subscribe-btn {
-    display: flex;
+    display: inline-flex;
     text-align: center;
     padding: 10px 29px;
+
+    @include mq (not-desktop) {
+        align-items: center;
+    }
 }
 
 .subscribe-btn__title {
