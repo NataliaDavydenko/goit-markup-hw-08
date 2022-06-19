@@ -9,12 +9,12 @@
 
 .projects__item {
     background: #ffffff;
+    width: 100%;
 
     @include mq (mobile-only) {
         &:not(:last-child) {
         margin-bottom: 30px;
         }
-        width: 100%;
     }
 
     @include mq (tablet) {
@@ -78,10 +78,9 @@
 
     color: var(--secondary-text-color-white);
     background-color: rgba(33, 150, 243, 0.9);
+    
+    padding: 77px 24px;
 
-    @include mq (mobile-only){
-        padding: 77px 24px;
-    }
 
     @include mq (tablet){
         padding: 49px 24px 77px 24px;

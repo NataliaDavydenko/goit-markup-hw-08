@@ -1,5 +1,10 @@
 .section--no-padding-top {
     padding-top: 0;
+    display: none;
+    
+    @include mq (desktop) {
+        display: block;
+    }
 }
 
 .section__title--hidden{
