@@ -14,29 +14,21 @@
     @include mq (tablet){
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: baseline;
     }
 }
 
 .footer__group {
+    margin-bottom: 60px;
 
     @include mq (tablet){
-        margin-right: 165px;
-        margin-bottom: 60px;
+       margin-bottom: 0;
     }
 
     @include mq (desktop){
     margin-right: 70px;
     flex-grow: 1;
-    margin-bottom: 0;
-    }
-}
-
-.address-group{
-
-    @include mq (mobile-only){
-        margin-bottom: 60px;
     }
 }
 
@@ -140,6 +132,11 @@
     fill: currentColor;
 }
 
+.subscribe-form{
+    @include mq (tablet-only){
+        margin-top: 60px;
+    }
+}
 
 .subscribe-form__title {
     display: block;
