@@ -35,11 +35,7 @@
         >
 
         <button type="button" class="mobile-menu js-open-menu">
-          <svg
-            class="mobile-menu__icon"
-            width="40"
-            height="40"
-          >
+          <svg class="mobile-menu__icon" width="40" height="40">
             <use
               class="mobile-menu__icon--open"
               href="./images/icons.svg#icon-menu"
@@ -86,11 +82,7 @@
 
       <div class="menu-container js-menu-container" id="mobile-menu">
         <button type="button" class="menu-container__btn js-close-menu">
-          <svg
-            class="menu-container__icon"
-            width="40"
-            height="40"
-          >
+          <svg class="menu-container__icon" width="40" height="40">
             <use
               class="menu-container_btn--close"
               href="./images/icons.svg#icon-menuclose"
@@ -99,14 +91,14 @@
         </button>
         <ul class="menu-nav">
           <li class="menu-nav__item">
-            <a
-              class="menu-nav__link"
-              href="./index.html"
-              >Студия</a
-            >
+            <a class="menu-nav__link" href="./index.html">Студия</a>
           </li>
           <li class="menu-nav__item">
-            <a class="menu-nav__link menu-nav__link--current" href="./portfolio.html">Портфолио</a>
+            <a
+              class="menu-nav__link menu-nav__link--current"
+              href="./portfolio.html"
+              >Портфолио</a
+            >
           </li>
           <li class="menu-nav__item">
             <a class="menu-nav__link" href="">Контакты</a>
@@ -115,12 +107,12 @@
 
         <ul class="menu-contact">
           <li class="menu-contact__tel-item">
-            <a class="menu-contact__link" href="tel:+380961111111">
+            <a class="menu-contact__tel-link" href="tel:+380961111111">
               +38 099 111 11 11</a
             >
           </li>
           <li class="menu-contact__mail-item">
-            <a class="menu-contact__link" href="mailto:info@devstudio.com">
+            <a class="menu-contact__mail-link" href="mailto:info@devstudio.com">
               info@devstudio.com</a
             >
           </li>
@@ -128,15 +120,17 @@
 
         <ul class="menu-socials">
           <li class="menu-socials__item">
-            <a href="">Instagram</a>
+            <a class="menu-socials__link" href="">Instagram</a>
           </li>
           <li class="menu-socials__item">
-            <a href="">Twitter</a>
+            <a class="menu-socials__link" href="">Twitter</a>
           </li>
           <li class="menu-socials__item">
-            <a href="">Facebook</a>
+            <a class="menu-socials__link" href="">Facebook</a>
           </li>
-          <li class="menu-socials__item"><a href="">LinkedIn</a></li>
+          <li class="menu-socials__item">
+            <a class="menu-socials__link" href="">LinkedIn</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -634,49 +628,84 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__group">
-          <a class="footer__logo" href="index.html" lang="en"><span class="logo__part">Web</span>Studio</a>
+          <a class="footer__logo" href="index.html" lang="en"
+            ><span class="logo__part">Web</span>Studio</a
+          >
           <address class="address">
             <ul class="address-group">
               <li class="address-group__item">
-                <a class="address-group__link address-group__link--white" href="https://goo.gl/maps/a1JVnRPQd5P11oBA7"
-                  target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+                <a
+                  class="address-group__link address-group__link--white"
+                  href="https://goo.gl/maps/a1JVnRPQd5P11oBA7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
               </li>
               <li class="address-group__item">
-                <a class="address-group__link" href="mailto:info@example.com">info@example.com</a>
+                <a class="address-group__link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
               </li>
               <li class="address-group__item">
-                <a class="address-group__link" href="tel:+380991111111">+38 099 111 11 11</a>
+                <a class="address-group__link" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
               </li>
             </ul>
           </address>
         </div>
-    
+
         <div class="join-group">
           <h3 class="join-group__title">Присоединяйтесь</h3>
           <ul class="socials-box">
             <li class="socials-box__item">
-              <a class="socials-box__link" href="" target="_blank" rel="noopener noreferrer" aria-label="иконка Instagram">
+              <a
+                class="socials-box__link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="иконка Instagram"
+              >
                 <svg class="socials-box__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="socials-box__item">
-              <a class="socials-box__link" href="" target="_blank" rel="noopener noreferrer" aria-label="иконка Twitter">
+              <a
+                class="socials-box__link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="иконка Twitter"
+              >
                 <svg class="socials-box__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="socials-box__item">
-              <a class="socials-box__link" href="" target="_blank" rel="noopener noreferrer" aria-label="иконка Facebook">
+              <a
+                class="socials-box__link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="иконка Facebook"
+              >
                 <svg class="socials-box__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="socials-box__item">
-              <a class="socials-box__link" href="" target="_blank" rel="noopener noreferrer" aria-label="иконка Linkedin">
+              <a
+                class="socials-box__link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="иконка Linkedin"
+              >
                 <svg class="socials-box__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -688,7 +717,11 @@
           <b class="subscribe-form__title">Подпишитесь на рассылку</b>
           <div class="subscribe-form__group">
             <label class="subscribe-form__label">
-              <input class="subscribe-form__input" name="footer-email" placeholder="E-mail" />
+              <input
+                class="subscribe-form__input"
+                name="footer-email"
+                placeholder="E-mail"
+              />
             </label>
             <button class="subscribe-btn btn" type="submit">
               <span class="subscribe-btn__title">Подписаться</span>
