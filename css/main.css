@@ -1286,6 +1286,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+  overflow: auto;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   width: 100%;
